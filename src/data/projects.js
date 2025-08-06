@@ -15,6 +15,6 @@ export const projects = [
     tech: ["React", "LocalStorage", "TailwindCSS"],
     github: "https://github.com/yourname/todo-app",
     demo: "https://todo.yourname.dev",
-    image: "/images/halal-market.png", // положи картинку сюда
+    image: "/images/hall-market.png", // положи картинку сюда
   },
 ];

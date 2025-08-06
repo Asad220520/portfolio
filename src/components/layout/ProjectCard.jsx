@@ -1,18 +1,25 @@
-// src/components/ProjectCard.jsx
+import Button from "../ui/Button";
+
 function ProjectCard({ title, description, tech, github, demo, image }) {
   return (
-    <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col">
+    <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition-transform hover:scale-[1.01] flex flex-col">
       {image && (
         <img
           src={image}
           alt={`${title} preview`}
-          className="w-full h-48 object-cover rounded-md mb-4"
+          className="w-full h-100 object-cover rounded-md mb-4"
+          onError={(e) => {
+            e.target.onerror = null;
+            e.target.src = "/public/images/found.png"; // Убедись, что эта картинка есть в public/images
+          }}
         />
       )}
+
       <h3 className="text-xl font-bold mb-2">{title}</h3>
       <p className="text-gray-700 dark:text-gray-300 mb-4 flex-grow">
         {description}
       </p>
+
       <div className="flex flex-wrap gap-2 mb-4">
         {tech.map((item, i) => (
           <span
@@ -23,23 +30,14 @@ function ProjectCard({ title, description, tech, github, demo, image }) {
           </span>
         ))}
       </div>
+
       <div className="flex gap-4 mt-auto">
-        <a
-          href={github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-600 hover:underline"
-        >
+        <Button as="a" href={github} target="_blank" variant="secondary">
           GitHub
-        </a>
-        <a
-          href={demo}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-600 hover:underline"
-        >
+        </Button>
+        <Button as="a" href={demo} target="_blank">
           Demo
-        </a>
+        </Button>
       </div>
     </div>
   );
