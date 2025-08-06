@@ -10,7 +10,7 @@ function ProjectCard({ title, description, tech, github, demo, image }) {
           className="w-full h-100 object-cover rounded-md mb-4"
           onError={(e) => {
             e.target.onerror = null;
-            e.target.src = "/public/images/found.png"; // Убедись, что эта картинка есть в public/images
+            e.target.src = "found.png"; // Убедись, что эта картинка есть в public/images
           }}
         />
       )}

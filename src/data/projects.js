@@ -7,7 +7,7 @@ export const projects = [
     tech: ["React", "Vite", "TailwindCSS"],
     github: "https://github.com/Asad220520/halal-market",
     demo: "https://halal-market.vercel.app/",
-    image: "/images/halal-market.png", // положи картинку сюда
+    image: "halal-market.png", // положи картинку сюда
   },
   {
     title: "Todo App",
