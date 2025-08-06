@@ -17,4 +17,20 @@ export const projects = [
     demo: "https://todo.yourname.dev",
     image: "/images/hall-market.png", // положи картинку сюда
   },
+  {
+    title: "Todo App",
+    description: "Простое приложение для управления задачами.",
+    tech: ["React", "LocalStorage", "TailwindCSS"],
+    github: "https://github.com/yourname/todo-app",
+    demo: "https://todo.yourname.dev",
+    image: "/images/hall-market.png", // положи картинку сюда
+  },
+  {
+    title: "Todo App",
+    description: "Простое приложение для управления задачами.",
+    tech: ["React", "LocalStorage", "TailwindCSS"],
+    github: "https://github.com/yourname/todo-app",
+    demo: "https://todo.yourname.dev",
+    image: "/images/hall-market.png", // положи картинку сюда
+  },
 ];
