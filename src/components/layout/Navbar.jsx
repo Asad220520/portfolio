@@ -31,7 +31,7 @@ function Navbar() {
       }`}
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link to="/" className="text-4xl font-bold whitespace-nowrap">
+        <Link to="/" className="text-2xl font-bold whitespace-nowrap">
           Хакимов Асадбек
         </Link>
 
