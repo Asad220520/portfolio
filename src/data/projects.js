@@ -7,7 +7,7 @@ export const projects = [
     tech: ["React", "Vite", "TailwindCSS"],
     github: "https://github.com/Asad220520/halal-market",
     demo: "https://halal-market.vercel.app/",
-    image: "/public/images/halal-market.png", // положи картинку сюда
+    image: "/images/halal-market.png", // положи картинку сюда
   },
   {
     title: "Todo App",
@@ -15,6 +15,6 @@ export const projects = [
     tech: ["React", "LocalStorage", "TailwindCSS"],
     github: "https://github.com/yourname/todo-app",
     demo: "https://todo.yourname.dev",
-    image: "/public/images/halal-market.png", // положи картинку сюда
+    image: "/images/halal-market.png", // положи картинку сюда
   },
 ];
